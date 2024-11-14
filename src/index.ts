@@ -9,7 +9,7 @@ const bot = new TelegramBot(API_KEY_BOT, {
 });
 
 
-bot.on("polling_error", err => console.log(err.data.error.message));
+bot.on("polling_error", err => console.log(err.data?.error?.message));
 
 bot.on('text', async msg => {
 
